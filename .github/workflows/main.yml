@@ -39,8 +39,6 @@ jobs:
         run: git push -f https://heroku:${{ secrets.HEROKU_API_TOKEN }}@git.heroku.com/${{ secrets.HEROKU_APP_STAGING }}.git origin/main:master     
 
   Deploy:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
-    needs: Test
     runs-on: ubuntu-latest
 
     steps:
