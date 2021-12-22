@@ -48,4 +48,4 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "rails7demo" #Must be unique in Heroku
-          heroku_email: "rahul.purohit@reddoorz.com"      
+          heroku_email: "rahulpuroht@gmail.com"      
